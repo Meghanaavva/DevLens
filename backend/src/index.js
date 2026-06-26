@@ -20,7 +20,7 @@ connectDB();
 app.use(helmet());
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
+    origin: process.env.CLIENT_URL || "https://dev-lens-gamma.vercel.app",
     credentials: true,
   }),
 );
@@ -53,5 +53,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(PORT, () =>
-  console.log(`🚀 Inspectra API running on http://localhost:${PORT}`),
+  console.log(`🚀 Inspectra API running on https://dev-lens-gamma.vercel.app`),
 );
