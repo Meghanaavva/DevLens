@@ -1,4 +1,4 @@
-const OR_KEY = import.meta.env.VITE_OPENROUTER_KEY || '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'
+const OR_KEY = import.meta.env.VITE_OPENROUTER_KEY 
 const OR_BASE = 'https://openrouter.ai/api/v1/chat/completions'
 
 // Hardcoded fallback list — updated June 2026
